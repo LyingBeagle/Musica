@@ -35,3 +35,34 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+body {
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--ion-color-secondary);
+  }
+  
+  h2.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: var(--ion-text-color);
+  }
+  
+  ion-toolbar {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-text-color);
+  }
+  
+  ion-button {
+    --background: var(--ion-color-button);
+    --color: var(--ion-color-button-contrast);
+    border-radius: 20px;
+  }
+  

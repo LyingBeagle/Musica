@@ -1,0 +1,19 @@
+ion-toolbar {
+    justify-content: space-between;
+    padding: 0.5rem;
+    --background: var(--ion-color-primary);
+    --color: var(--ion-text-color);
+  
+    ion-icon {
+      font-size: 1.4rem;
+      margin-right: 0.7rem;
+      color: #ccc;
+    }
+  
+    ion-title {
+      text-align: right;
+      font-size: 0.8rem;
+      color: #888;
+    }
+  }
+  

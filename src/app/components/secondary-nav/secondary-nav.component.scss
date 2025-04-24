@@ -1,0 +1,17 @@
+.secondary-nav{
+    display: flex;
+    justify-self: center;
+    background-color: var(--ion-color-primary);
+    padding: 0.5rem;
+
+    a{
+        margin:0.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        color: #ccc;
+
+        &:hover{
+            color: var(--ionc-color-secondary);
+        }
+    }
+}

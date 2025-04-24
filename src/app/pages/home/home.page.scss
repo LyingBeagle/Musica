@@ -1,0 +1,19 @@
+.page-home {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ion-background-color);
+    color: var(--ion-text-color);
+  }
+  
+  section {
+    margin: 1.5rem 1rem;
+  }
+  
+  .section-title {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-left: 4px solid var(--ion-color-secondary);
+    padding-left: 0.5rem;
+  }
+  
