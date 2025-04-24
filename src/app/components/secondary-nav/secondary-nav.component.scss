@@ -1,17 +1,39 @@
 .secondary-nav{
-    display: flex;
-    justify-self: center;
-    background-color: var(--ion-color-primary);
-    padding: 0.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 0.75rem 0;
+    
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 
-    a{
-        margin:0.1rem;
-        font-weight: 600;
+    .nav-item{
+        margin: 0 1.5rem;
+        color: #ffffff;
+        font-size: 0.95rem;
+        font-weight: 500;
+        position: relative;
+        text-decoration: none;
         cursor: pointer;
-        color: #ccc;
 
         &:hover{
-            color: var(--ionc-color-secondary);
+            opacity: 25%;
+        }
+
+        &.active::after{
+            content: '';
+            position: absolute;
+            bottom: -0.25rem;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: var(--ion-color-secondary);
+            border-radius: 2px;
         }
     }
 }
