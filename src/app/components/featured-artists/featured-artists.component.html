@@ -1,10 +1,9 @@
-<h2 class="section-title">Artistas destacados</h2>
-
-<div class="featured-artists">
-  <img src="assets/bands/band1.jpg" />
-  <img src="assets/bands/band2.jpg" />
-  <img src="assets/bands/band3.jpg" />
-  <img src="assets/bands/band4.jpg" />
-  <img src="assets/bands/band5.jpg" />
-
-</div>
+<section class="featured-artists-section">
+  <h2 class="section-title">Artistas destacados</h2>
+  <div class="artists-container">
+    <div class="artist-card" *ngFor="let artist of artists">
+      <img [src]="artist.image" [alt]="artist.name" />
+      <p>{{ artist.name }}</p>
+    </div>
+  </div>
+</section>
