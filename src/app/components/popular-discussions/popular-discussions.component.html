@@ -1,20 +1,19 @@
-<h2 class="section-title">Discusiones más populares</h2>
-<div class="discussions">
-  <div class="discussion-card">
-    <img src="assets/albums/album4.jpg" />
-    <div>
-      <h3>Mortal Kumbiatr</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <ion-button size="small" color="tertiary">Entrar</ion-button>
+<section class="popular-discussions-section">
+  <h2 class="section-title">Discusiones más populares</h2>
+  <div class="discussions-container">
+    <div class="discussion-card" *ngFor="let d of discussions">
+      <img [src]="d.image" [alt]="d.title" />
+      <div class="discussion-content">
+        <h3>{{ d.title }}</h3>
+        <p>{{ d.excerpt }}</p>
+      </div>
+      <ion-button 
+        class="enter-btn" 
+        fill="solid" 
+        size="small"
+      >
+        Entrar
+      </ion-button>
     </div>
   </div>
-
-  <div class="discussion-card">
-     <img src="assets/albums/album2.jpg" />
-    <div>
-      <h3>Steal this album!</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-      <ion-button size="small" color="tertiary">Entrar</ion-button>
-    </div>
-  </div>
-</div>
+</section>
