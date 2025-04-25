@@ -3,8 +3,11 @@
 ## Integrantes:
 
 -Alonso Bravo
+
 -Guillermo Castillo
+
 -Ignacio Vera
+
 -Bastian Trejo
 
 ## Descripción
