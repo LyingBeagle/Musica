@@ -13,11 +13,4 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
 
-  onLogin(credentials: { username: string; password: string }) {
-    // aquí recibes el evento desde el componente
-    console.log('LoginPage recibió:', credentials);
-    // llama a tu servicio de auth...
-  }
-  
-
 }
