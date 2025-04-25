@@ -2,14 +2,14 @@
   <ion-toolbar>
     <div class = "header-container">
       <div class = "logo-wrapper">
-        <img src = "assets/logos/logo-loom.png" alt="Logo loom" />
+        <img src = "assets/logos/logo-loom.png" alt="Logo loom" (click) = "goToMenu()" />
       </div>
       <ion-searchbar
         class = "main-searchbar"
         placeholder="Buscar canción, álbum o artista"
         show-clear-button = "never"
       ></ion-searchbar>
-      <ion-button class = "login-btn" fill="clear">
+      <ion-button class = "login-btn" fill="clear" (click) = "goToLogin()">
         Iniciar sesión
       </ion-button>
     </div>

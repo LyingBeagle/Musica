@@ -9,6 +9,8 @@ import { PopularDiscussionsComponent } from '../components/popular-discussions/p
 import { FeaturedArtistsComponent } from '../components/featured-artists/featured-artists.component';
 import { FooterComponent } from '../components/footer/footer.component';
 
+import { LoginMenuComponent } from '../components/login-menu/login-menu.component';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -17,6 +19,7 @@ import { FooterComponent } from '../components/footer/footer.component';
     PopularDiscussionsComponent,
     FeaturedArtistsComponent,
     FooterComponent,
+    LoginMenuComponent,
   ],
   imports: [
     CommonModule,
@@ -29,6 +32,7 @@ import { FooterComponent } from '../components/footer/footer.component';
     PopularDiscussionsComponent,
     FeaturedArtistsComponent,
     FooterComponent,
+    LoginMenuComponent,
   ]
 })
 export class SharedModule {}

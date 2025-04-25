@@ -1,0 +1,44 @@
+<div class="login-wrapper">
+  <div class="login-card">
+    <div class="login-header">
+      <h1>Iniciar Sesión</h1>
+      <img src="assets/logos/logo-loom.png" alt="logo Loom" />
+    </div>
+
+    <ion-button expand="block" class="social-btn google">
+      <ion-icon name="logo-google" slot="start"></ion-icon>
+      Continuar con Google
+    </ion-button>
+
+    <ion-button expand="block" class="social-btn facebook">
+      <ion-icon name="logo-facebook" slot="start"></ion-icon>
+      Continuar con Facebook
+    </ion-button>
+
+    <ion-button expand="block" class="social-btn apple">
+      <ion-icon name="logo-apple" slot="start"></ion-icon>
+      Continuar con Apple
+    </ion-button>
+
+    <form>
+      <ion-item>
+        <ion-label position="floating">Ingrese Usuario</ion-label>
+        <ion-input name="username"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Ingrese Contraseña</ion-label>
+        <ion-input name="password" type="password"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" type="button" class="login-btn">
+        Iniciar Sesión
+      </ion-button>
+    </form>
+
+    <div class="login-links">
+      <a>Se me olvidó la contraseña</a>
+      <a>Crear Cuenta</a>
+    </div>
+  </div>
+</div>
