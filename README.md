@@ -69,11 +69,18 @@ El proyecto consiste en el desarrollo de una aplicación social relacionada con 
 
 
 ## Tecnologías
+
 -Ionic Framework
+
 -Angular
+
 -TypeScript
+
 -Html
+
 -Scss
+
+-JavaScript
 
 ## Ejecucion Figma 
 
