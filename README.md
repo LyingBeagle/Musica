@@ -1,4 +1,12 @@
 ## Nombre del Proyecto : Loom
+
+## Integrantes:
+
+-Alonso Bravo
+-Guillermo Castillo
+-Ignacio Vera
+-Bastian Trejo
+
 ## Descripción
 
 El proyecto consiste en el desarrollo de una aplicación social relacionada con la música, en la que los usuarios podrán participar en foros de discusión, gestionar sus perfiles, crear contenido, seguir a otros usuarios y compartir sus experiencias a través de blogs y publicaciones. La plataforma será accesible en dispositivos móviles (iOS y Android) y proporcionará una experiencia fluida tanto para usuarios como para administradores.
@@ -65,7 +73,7 @@ El proyecto consiste en el desarrollo de una aplicación social relacionada con 
 -Angular
 -TypeScript
 -Html
--Css
+-Scss
 
 ## Ejecucion Figma 
 
