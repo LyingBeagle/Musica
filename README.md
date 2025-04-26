@@ -91,7 +91,4 @@ El proyecto consiste en el desarrollo de una aplicación social relacionada con 
 
 -Version Desktop: Modo "Ajustar Ancho" (recomendado)
 
-# Ejecucion Codigo
-
--
 
