@@ -1,0 +1,59 @@
+<div class= 'register-wrapper'>
+  <div class = "register-card">
+    <div class="crear-cuenta-header">
+      <h1>Crear cuenta</h1>
+      <img src="assets/logos/logo-loom.png" alt="logo Loom" />
+    </div>
+    
+
+    <form>
+      <ion-item>
+        <ion-label position="floating">Ingrese Usuario</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ingrese Rut</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ingrese Correo</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+
+      <div class = "selects-row">
+        <ion-item class = "select-item">
+          <ion-label position = "floating">Región</ion-label>
+          <ion-select placeholder = "Seleccione región">
+            <ion-select-option value = "Valparaiso">Valparaiso</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class = "select-item">
+          <ion-label position = "floating">Comuna</ion-label>
+          <ion-select placeholder="Seleccione comuna">
+            <ion-select-option value = "Valparaiso">Valparaiso</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+
+      <ion-item>
+        <ion-label position = "floating">Confirme Contraseña</ion-label>
+        <ion-input type = "password"></ion-input>
+      </ion-item>
+
+      <div class="terms-row">
+        <label>
+          <input type="checkbox" />
+          Confirmo y acepto los términos
+        </label>
+        <a (click) = "goToLogin()">¿Ya tienes una cuenta?</a>
+      </div>
+
+      <ion-button expand="block" class="register-btn">
+        Crear Cuenta
+      </ion-button>
+    </form>
+  </div>
+</div>

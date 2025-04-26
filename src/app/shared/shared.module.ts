@@ -11,6 +11,8 @@ import { FooterComponent } from '../components/footer/footer.component';
 
 import { LoginMenuComponent } from '../components/login-menu/login-menu.component';
 
+import { CrearCuentaMenuComponent } from '../components/crear-cuenta-menu/crear-cuenta-menu.component';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -20,6 +22,7 @@ import { LoginMenuComponent } from '../components/login-menu/login-menu.componen
     FeaturedArtistsComponent,
     FooterComponent,
     LoginMenuComponent,
+    CrearCuentaMenuComponent,
   ],
   imports: [
     CommonModule,
@@ -33,6 +36,7 @@ import { LoginMenuComponent } from '../components/login-menu/login-menu.componen
     FeaturedArtistsComponent,
     FooterComponent,
     LoginMenuComponent,
+    CrearCuentaMenuComponent,
   ]
 })
 export class SharedModule {}

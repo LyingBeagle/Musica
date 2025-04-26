@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-menu',
@@ -8,6 +9,10 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class LoginMenuComponent {
 
-  constructor() {}
+  constructor(private router: Router) { }
+
+  goToCrearCuenta(){
+    this.router.navigate(['/crear-cuenta']);
+  }
 
 }
