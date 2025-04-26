@@ -1,4 +1,15 @@
 ## Nombre del Proyecto : Loom
+
+## Integrantes:
+
+-Alonso Bravo
+
+-Guillermo Castillo
+
+-Ignacio Vera
+
+-Bastian Trejo
+
 ## Descripción
 
 El proyecto consiste en el desarrollo de una aplicación social relacionada con la música, en la que los usuarios podrán participar en foros de discusión, gestionar sus perfiles, crear contenido, seguir a otros usuarios y compartir sus experiencias a través de blogs y publicaciones. La plataforma será accesible en dispositivos móviles (iOS y Android) y proporcionará una experiencia fluida tanto para usuarios como para administradores.
@@ -9,6 +20,8 @@ El proyecto consiste en el desarrollo de una aplicación social relacionada con 
 2. [Requerimiento No Funcionales](#RequerimientoFuncionales)
 3. [Prototipado Figma](#prototipadofigma)
 4. [Tecnologías](#tecnologías)
+5. [Ejecucion Figma](#EjecucionFigma)
+6. [Ejecucion Codigo](#EjecucionCodigo)
 
 
 ## Requerimiento Funcionales
@@ -38,14 +51,18 @@ El proyecto consiste en el desarrollo de una aplicación social relacionada con 
 
 -Los administradores pueden moderar y eliminar comentarios inapropiados.
 
+### 6. **Valoración de Canciones**
+- Los usuarios pueden calificar canciones utilizando un sistema de estrellas (por ejemplo, de 1 a 5 estrellas).
+
+- El sistema calcula automáticamente el promedio de todas las valoraciones recibidas para cada canción
+- El promedio de calificación se muestra tanto en la página de la canción como en la del artista correspondiente.
+
+-Los administradores pueden revisar y eliminar valoraciones inapropiadas o sospechosas (por ejemplo, spam o abuso del sistema de puntuación)
 ---
 ## Requerimiento No Funcionales
 ### 1. **Código bien documentado**
 - Todo el código debe seguir buenas prácticas y estar documentado para facilitar su mantenimiento.
 
-### 2. **Información de canciones**
-- Integración con bases de datos o APIs  públicas de música para mostrar detalles de canciones y álbumes.
----
 
 
 ## Prototipado en Figma
@@ -55,3 +72,26 @@ El proyecto consiste en el desarrollo de una aplicación social relacionada con 
 
 
 ## Tecnologías
+
+-Ionic Framework
+
+-Angular
+
+-TypeScript
+
+-Html
+
+-Scss
+
+-JavaScript
+
+## Ejecucion Figma 
+
+-Version Movil: Modo "Ajustar Ancho" o "Tamaño real 100%" (recomendado)
+
+-Version Desktop: Modo "Ajustar Ancho" (recomendado)
+
+# Ejecucion Codigo
+
+-
+
