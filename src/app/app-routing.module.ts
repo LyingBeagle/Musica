@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'crear-cuenta',
     loadChildren: () => import('./pages/crear-cuenta/crear-cuenta.module').then( m => m.CrearCuentaPageModule)
   },
+  {
+    path: 'recuperar',
+    loadChildren: () => import('./pages/recuperar/recuperar.module').then( m => m.RecuperarPageModule)
+  },
 
 
 ];

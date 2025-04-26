@@ -15,4 +15,8 @@ export class LoginMenuComponent {
     this.router.navigate(['/crear-cuenta']);
   }
 
+  goToRecuperar(){
+    this.router.navigate(['/recuperar']);
+  }
+
 }
