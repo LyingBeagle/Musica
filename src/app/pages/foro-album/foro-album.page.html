@@ -1,0 +1,40 @@
+<app-header></app-header>
+
+<ion-content fullscreen="true">
+    <!-- Cabecera del álbum -->
+    <div class="album-page">
+    <app-album-header></app-album-header>
+    <app-album-rating></app-album-rating>
+    <app-album-info-box></app-album-info-box>
+    </div>
+
+    <!-- Contenedor principal para los dos grupos -->
+    <div class="content-wrapper">
+    <!-- Columna izquierda: canciones y bloque inferior -->
+    <div class="left-column">
+        <app-album-songs></app-album-songs>
+        <!-- Bloque adicional que se muestra debajo de las canciones -->
+        <div class="bottom-block">
+        <div class="comment-background"></div>
+        </div>
+    </div>
+
+    <!-- Columna derecha: formulario y comentarios -->
+    <div class="right-column">
+        <app-comment-form></app-comment-form>
+        <div class="comments-wrapper">
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        <app-comment-item></app-comment-item>
+        </div>
+    </div>
+    </div>
+</ion-content>
+
+<app-footer></app-footer>

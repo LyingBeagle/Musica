@@ -66,5 +66,7 @@ body {
     border-radius: 20px;
   }
 
-  
-  
+html, body, ion-app {
+  height: 100%;
+  overflow-y: auto;
+}

@@ -1,0 +1,50 @@
+.album-songs {
+  background-color: #333333;
+  padding: 16px;
+  border-radius: 12px;
+  width: 220px;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+
+  .title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 6px;
+  }
+
+  .song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .song-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 0;
+      font-size: 13px;
+      border-radius: 4px;
+      transition: background 0.3s;
+
+      &:hover {
+        background-color: #3b3b3b;
+        cursor: pointer;
+      }
+
+      .song-title {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .song-duration {
+        font-size: 12px;
+        color: #bbb;
+        margin-left: 8px;
+      }
+    }
+  }
+}

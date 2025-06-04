@@ -10,10 +10,15 @@ import { FeaturedArtistsComponent } from '../components/featured-artists/feature
 import { FooterComponent } from '../components/footer/footer.component';
 
 import { LoginMenuComponent } from '../components/login-menu/login-menu.component';
-
 import { CrearCuentaMenuComponent } from '../components/crear-cuenta-menu/crear-cuenta-menu.component';
-
 import { RecuperarMenuComponent } from '../components/recuperar-menu/recuperar-menu.component';
+
+import { AlbumHeaderComponent } from '../components/album-header/album-header.component';
+import { AlbumRatingComponent } from '../components/album-rating/album-rating.component';
+import { AlbumInfoBoxComponent } from '../components/album-info-box/album-info-box.component';
+import { AlbumSongsComponent } from '../components/album-songs/album-songs.component';
+import { CommentFormComponent } from '../components/comment-form/comment-form.component';
+import { CommentItemComponent } from '../components/comment-item/comment-item.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +31,12 @@ import { RecuperarMenuComponent } from '../components/recuperar-menu/recuperar-m
     LoginMenuComponent,
     CrearCuentaMenuComponent,
     RecuperarMenuComponent,
+    AlbumHeaderComponent,
+    AlbumRatingComponent,
+    AlbumInfoBoxComponent,
+    AlbumSongsComponent,
+    CommentFormComponent,
+    CommentItemComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +52,12 @@ import { RecuperarMenuComponent } from '../components/recuperar-menu/recuperar-m
     LoginMenuComponent,
     CrearCuentaMenuComponent,
     RecuperarMenuComponent,
+    AlbumHeaderComponent,
+    AlbumRatingComponent,
+    AlbumInfoBoxComponent,
+    AlbumSongsComponent,
+    CommentFormComponent,
+    CommentItemComponent,
   ]
 })
 export class SharedModule {}
