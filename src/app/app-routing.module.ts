@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import { ForoAlbumPageModule } from './pages/foro-album/foro-album.module';
+
 const routes: Routes = [
   {
     path: '',
@@ -24,10 +26,15 @@ const routes: Routes = [
     path: 'recuperar',
     loadChildren: () => import('./pages/recuperar/recuperar.module').then( m => m.RecuperarPageModule)
   },
+
+  /*
   {
     path: 'foro-album',
     loadChildren: () => import('./pages/foro-album/foro-album.module').then( m => m.ForoAlbumPageModule)
   },
+  */
+
+  { path: 'album/:id', loadChildren: () => import('./pages/foro-album/foro-album.module').then(m => m.ForoAlbumPageModule) }
 
 
 ];

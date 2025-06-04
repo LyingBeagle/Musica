@@ -1,12 +1,13 @@
-<section class = "banner-wrapper">
-   <div class = "carousel">
-      <img
-         *ngFor = "let img of images; let i = index"
-         [src] = "img"
-         [class.active] = "i === currentIndex"
-         [class.prev] = "i === (currentIndex - 1 + images.length) % images.length"
-         [class.next] = "i === (currentIndex + 1) % images.length"
-         alt = "Banner {{ i + 1}}"
-      />
-   </div>
+<section class="banner-wrapper">
+  <div class="carousel">
+    <a
+      *ngFor="let item of items; let i = index"
+      [routerLink]="item.link"
+      [class.active]="i === currentIndex"
+      [class.prev]="i === (currentIndex - 1 + items.length) % items.length"
+      [class.next]="i === (currentIndex + 1) % items.length"
+    >
+      <img [src]="item.img" alt="Banner {{ i + 1 }}" />
+    </a>
+  </div>
 </section>

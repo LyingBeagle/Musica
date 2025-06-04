@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 
 import { HeaderComponent } from '../components/header/header.component';
 import { FeaturedBannerComponent } from '../components/featured-banner/featured-banner.component';
@@ -41,6 +42,7 @@ import { CommentItemComponent } from '../components/comment-item/comment-item.co
   imports: [
     CommonModule,
     IonicModule,
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
