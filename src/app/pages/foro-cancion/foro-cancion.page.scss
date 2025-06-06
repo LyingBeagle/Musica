@@ -1,0 +1,69 @@
+.song-page{
+    padding: 24px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    padding: 24px;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Contenedor principal de ambas columnas */
+.content-wrapper {
+  display: flex;
+  justify-content: center;  // Centra horizontalmente el bloque completo
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;  // Para dispositivos pequeños se apilen las columnas
+}
+
+/* Estilos para ambas columnas */
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Alineación centrada dentro de cada columna */
+.left-column {
+  align-items: center;  
+}
+
+.right-column {
+  align-items: center;
+  width: 100%;
+  max-width: 700px;  // Para que no se extienda demasiado
+}
+
+/* Bloque inferior dentro de la columna izquierda */
+.bottom-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+/* Estilos para el bloque de fondo (comentario) */
+.comment-background {
+  background-color: #333333;
+  width: 260px;
+  height: 100%;  // Permite que la altura se ajuste al contenido
+  border-radius: 1rem;
+  padding: 20px; 
+}
+
+/* Estilos para el formulario de comentarios y la lista de comentarios */
+app-comment-form,
+.comments-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+ion-content {
+  --overflow: auto;
+}

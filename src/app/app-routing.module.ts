@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    //redirectTo: 'foro-album',
+    //redirectTo: 'foro-cancion',
     pathMatch: 'full'
   },
   {
@@ -34,7 +34,12 @@ const routes: Routes = [
   },
   */
 
-  { path: 'album/:id', loadChildren: () => import('./pages/foro-album/foro-album.module').then(m => m.ForoAlbumPageModule) }
+  { path: 'album/:id', loadChildren: () => import('./pages/foro-album/foro-album.module').then(m => m.ForoAlbumPageModule) },
+  {
+    path: 'foro-cancion',
+    loadChildren: () => import('./pages/foro-cancion/foro-cancion.module').then( m => m.ForoCancionPageModule)
+  }
+
 
 
 ];

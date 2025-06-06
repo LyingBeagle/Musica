@@ -1,15 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-album-songs',
   templateUrl: './album-songs.component.html',
   styleUrls: ['./album-songs.component.scss'],
   standalone:false
 })
-export class AlbumSongsComponent  implements OnInit {
+export class AlbumSongsComponent {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {}
+  goToSong(){
+    this.router.navigate(['/foro-cancion']);
+  }
 
 }
