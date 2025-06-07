@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <app-artist-header></app-artist-header>
+
+  <app-artist-links></app-artist-links>
+
+  <!--Aca pasarlo a TS con {{ }}, hacerlo despues-->
+  <div class = "spotify">
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2nhjfjsQ7lMfDT4wy99310?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  
+  <div class = "comment">
+    <app-comment-form></app-comment-form>
+  </div>
+  
+  <div class = "comments-wrapper">
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+    <app-comment-item></app-comment-item>
+  </div>
+
+</ion-content>
+<app-footer></app-footer>

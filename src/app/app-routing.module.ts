@@ -6,8 +6,8 @@ import { ForoAlbumPageModule } from './pages/foro-album/foro-album.module';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
-    //redirectTo: 'foro-cancion',
+    //redirectTo: 'home',
+    redirectTo: 'foro-artista',
     pathMatch: 'full'
   },
   {
@@ -38,7 +38,12 @@ const routes: Routes = [
   {
     path: 'foro-cancion',
     loadChildren: () => import('./pages/foro-cancion/foro-cancion.module').then( m => m.ForoCancionPageModule)
+  },
+  {
+    path: 'foro-artista',
+    loadChildren: () => import('./pages/foro-artista/foro-artista.module').then( m => m.ForoArtistaPageModule)
   }
+
 
 
 

@@ -1,0 +1,137 @@
+.artist-header-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  background-color: #2c2c2c;
+  border-radius: 1.5rem;
+  padding: 2rem 3rem;
+  color: white;
+  box-shadow: 0 0.3rem 1.2rem rgba(0, 0, 0, 0.3);
+  max-width: 50%;
+  margin: 2rem auto; // Centrado horizontal y separación vertical
+}
+
+.artist-photo {
+  flex: 0 0 auto;
+
+  img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6A0DAD;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &:hover img {
+    transform: scale(1.05);
+  }
+}
+
+.artist-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .info-columns {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .label {
+      font-size: 1rem;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .genre {
+      font-size: 1rem;
+      color: #9d7ce8;
+      text-decoration: none;
+      margin-right: 0.5rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #6A0DAD;
+      }
+    }
+  }
+
+  .follow-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 300px;
+
+    .followers {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #ccc;
+    }
+
+    .follow-btn {
+      background-color: #6A0DAD;
+      color: #fff;
+      border: none;
+      padding: 0.4rem 1.2rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #5A0A8A;
+      }
+    }
+  }
+}
+
+/* Adaptaciones para pantallas más chicas */
+@media (max-width: 768px) {
+  .artist-header-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .artist-photo {
+    margin-bottom: 1.5rem;
+  }
+
+  .artist-info {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .info-columns {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .follow-section {
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 100%;
+    }
+  }
+}
