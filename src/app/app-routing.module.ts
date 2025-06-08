@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     //redirectTo: 'home',
-    redirectTo: 'discografia',
+    redirectTo: 'profile',
     pathMatch: 'full'
   },
   {
@@ -46,7 +46,12 @@ const routes: Routes = [
   {
     path: 'discografia',
     loadChildren: () => import('./pages/discografia/discografia.module').then( m => m.DiscografiaPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   }
+
 
 
 

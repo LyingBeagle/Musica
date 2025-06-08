@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true" class="profile-page">
+  
+  <div class = "profile-header">
+    <app-profile-header></app-profile-header>
+  </div>
+
+  <div class = "profile-description">
+    <app-profile-description></app-profile-description>
+  </div>
+  
+  <section>
+    <h2>Artistas Seguidos</h2>
+    <app-circle-item-list class="followed-artist"
+      *ngIf="followedArtists.length > 0" 
+      [items]="followedArtists">
+    </app-circle-item-list>
+  </section>
+
+  <section>
+    <h2 *ngIf="albums.length > 0">Albums Favoritos</h2>
+    <div class="albums-section" *ngIf="albums.length > 0">
+      <app-single-card *ngFor="let album of albums" [cover]="album.cover"></app-single-card>
+    </div>
+  </section>
+  
+  <section>
+    <h2>Usuarios Seguidos</h2>
+    <app-circle-item-list class="followed-users"
+      *ngIf="followedUsers.length > 0" 
+      [items]="followedUsers">
+    </app-circle-item-list>
+  </section>
+
+</ion-content>
+
+<app-footer></app-footer>

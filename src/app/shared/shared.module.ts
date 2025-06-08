@@ -30,6 +30,10 @@ import { ArtistLinksComponent } from '../components/artist-links/artist-links.co
 import { AlbumCardComponent } from '../components/album-card/album-card.component';
 import { SingleCardComponent } from '../components/single-card/single-card.component';
 
+import { ProfileHeaderComponent } from '../components/profile-header/profile-header.component';
+import { ProfileDescriptionComponent } from '../components/profile-description/profile-description.component';
+import { CircleItemListComponent } from '../components/circle-item-list/circle-item-list.component';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -53,6 +57,9 @@ import { SingleCardComponent } from '../components/single-card/single-card.compo
     ArtistLinksComponent,
     AlbumCardComponent,
     SingleCardComponent,
+    ProfileHeaderComponent,
+    ProfileDescriptionComponent,
+    CircleItemListComponent,
   ],
   imports: [
     CommonModule,
@@ -81,6 +88,9 @@ import { SingleCardComponent } from '../components/single-card/single-card.compo
     ArtistLinksComponent,
     AlbumCardComponent,
     SingleCardComponent,
+    ProfileHeaderComponent,
+    ProfileDescriptionComponent,
+    CircleItemListComponent,
   ]
 })
 export class SharedModule {}
