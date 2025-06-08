@@ -1,0 +1,35 @@
+.album-card{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+    img{
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            margin: 0;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .meta{
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        .stars ion-icon{
+            color: gold;
+            font-size: 1rem;
+        }
+    }
+
+}

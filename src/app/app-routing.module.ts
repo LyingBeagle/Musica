@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     //redirectTo: 'home',
-    redirectTo: 'foro-artista',
+    redirectTo: 'discografia',
     pathMatch: 'full'
   },
   {
@@ -42,7 +42,12 @@ const routes: Routes = [
   {
     path: 'foro-artista',
     loadChildren: () => import('./pages/foro-artista/foro-artista.module').then( m => m.ForoArtistaPageModule)
+  },
+  {
+    path: 'discografia',
+    loadChildren: () => import('./pages/discografia/discografia.module').then( m => m.DiscografiaPageModule)
   }
+
 
 
 

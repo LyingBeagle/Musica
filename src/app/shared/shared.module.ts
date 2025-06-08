@@ -27,6 +27,9 @@ import { SongInfoBoxComponent } from '../components/song-info-box/song-info-box.
 import { ArtistHeaderComponent } from '../components/artist-header/artist-header.component';
 import { ArtistLinksComponent } from '../components/artist-links/artist-links.component';
 
+import { AlbumCardComponent } from '../components/album-card/album-card.component';
+import { SingleCardComponent } from '../components/single-card/single-card.component';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -48,6 +51,8 @@ import { ArtistLinksComponent } from '../components/artist-links/artist-links.co
     SongInfoBoxComponent,
     ArtistHeaderComponent,
     ArtistLinksComponent,
+    AlbumCardComponent,
+    SingleCardComponent,
   ],
   imports: [
     CommonModule,
@@ -74,6 +79,8 @@ import { ArtistLinksComponent } from '../components/artist-links/artist-links.co
     SongInfoBoxComponent,
     ArtistHeaderComponent,
     ArtistLinksComponent,
+    AlbumCardComponent,
+    SingleCardComponent,
   ]
 })
 export class SharedModule {}
