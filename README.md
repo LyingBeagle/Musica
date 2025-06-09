@@ -142,7 +142,7 @@ Una vez dentro de la aplicacion:
 -para iniciar el el front: "ionic serve"
 
 
-## ALGUNO DE LOS ENDOPITN DE LA API(ENTRE LOS MAS UTILES):
+## ALGUNO DE LOS ENDPOINT DE LA API(ENTRE LOS MAS UTILES):
 
 - POST/auth/register
 
