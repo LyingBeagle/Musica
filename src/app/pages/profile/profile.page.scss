@@ -1,0 +1,81 @@
+.profile-page {
+  --background: #121212;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  /* Títulos generales */
+  h2 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    /* Quita el margin-left para centrar */
+    /* text-align se ajusta en la regla que sigue */
+  }
+
+  .profile-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .profile-description {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333333;
+    padding: 0 25%;
+    margin-bottom: 16px;
+  }
+
+  .followed-artist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  .followed-users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .albums-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+    justify-content: center;
+
+    app-single-card {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido interno de la sección */
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+}
+
+/* Ajuste para los títulos de las secciones */
+.profile-page h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #6A0DAD; /* Línea roja brillante */
+  padding-bottom: 8px;
+  text-align: center;   /* Centra el título */
+  color: #ffcccc;
+}

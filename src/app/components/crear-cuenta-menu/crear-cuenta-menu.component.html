@@ -1,0 +1,71 @@
+<div class="register-wrapper">
+  <div class="register-card">
+    <div class="crear-cuenta-header">
+      <h1>Crear cuenta</h1>
+      <img src="assets/logos/logo-loom.png" alt="logo Loom" />
+    </div>
+
+    <form (submit)="register({
+      nombreUsuario: nombreUsuario.value,
+      rut: rut.value,
+      correo: correo.value,
+      region: region.value,
+      comuna: comuna.value,
+      contrasena: contrasena.value,
+      confirmarContrasena: confirmarContrasena.value
+    })">
+      <ion-item>
+        <ion-label position="floating">Ingrese Usuario</ion-label>
+        <ion-input #nombreUsuario required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ingrese Rut</ion-label>
+        <ion-input #rut required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ingrese Correo</ion-label>
+        <ion-input #correo type="email" required></ion-input>
+      </ion-item>
+
+      <div class="selects-row">
+        <ion-item class="select-item">
+          <ion-label position="floating">Región</ion-label>
+          <ion-select #region placeholder="Seleccione región" required>
+            <ion-select-option value="Valparaiso">Valparaiso</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item class="select-item">
+          <ion-label position="floating">Comuna</ion-label>
+          <ion-select #comuna placeholder="Seleccione comuna" required>
+            <ion-select-option value="Valparaiso">Valparaiso</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+
+      <ion-item>
+        <ion-label position="floating">Ingrese Contraseña</ion-label>
+        <ion-input #contrasena required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Confirme Contraseña</ion-label>
+        <ion-input #confirmarContrasena type="password" required></ion-input>
+      </ion-item>
+
+      <div class="terms-row">
+        <label>
+          <input type="checkbox" required />
+          Confirmo y acepto los términos
+        </label>
+        <a (click)="goToLogin()">¿Ya tienes una cuenta?</a>
+      </div>
+
+      <ion-button expand="block" class="register-btn" type="submit">
+        Crear Cuenta
+      </ion-button>
+    </form>
+  </div>
+</div>

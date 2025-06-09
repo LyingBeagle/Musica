@@ -1,0 +1,32 @@
+.album-rating-card{
+    background-color: #333333;
+    border-radius: 16px;
+    padding: 16px 24px;
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Segoe UI', sans-serif;
+
+    .rating-title{
+        font-weight: bold;
+        margin-bottom: 4px;
+        font-size: 15px;
+    }
+
+    .rating-value{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        .score{
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .stars{
+            font-size:24px;
+        }
+    }
+}

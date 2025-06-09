@@ -1,0 +1,66 @@
+/* Contenedor central para limitar el ancho y centrar el contenido */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para los títulos de sección */
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #6A0DAD;
+  padding-bottom: 4px;
+  text-align: left;    /* Puedes ajustar la alineación, por ejemplo a centro, si lo prefieres */
+}
+
+/* Secciones de tarjetas: se centran los elementos y se deja espacio entre ellos */
+
+.albums-section{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+
+.singles-section,
+.eps-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  justify-content: center;
+}
+
+/* Tarjetas de álbum: se muestran en dos columnas en pantallas grandes */
+app-album-card {
+  flex: 1 1 calc(50% - 16px);
+  max-width: calc(50% - 16px);
+}
+
+/* Tarjetas de sencillos y EPs */
+app-single-card {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Ajustes para pantallas pequeñas */
+/* Se muestra una sola columna para álbumes y se reducen los tamaños */
+@media screen and (max-width: 768px) {
+  app-album-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  app-single-card {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+ion-content {
+  --overflow: auto;
+}

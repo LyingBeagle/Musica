@@ -1,0 +1,84 @@
+.popular-discussions-section {
+    background: #1a1a1a;
+    padding: 2rem 1rem;
+    
+    .section-title {
+      margin: 0 0 1.5rem;
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      border-left: 4px solid #6A0DAD;
+      padding-left: 0.75rem;
+    }
+    
+    .discussions-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .discussion-card {
+      display: flex;
+      align-items: center;
+      background: #333333;
+      border-radius: 12px;
+      padding: 1rem;
+      gap: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 10px;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+      
+      .discussion-content {
+        flex-grow: 1;
+        
+        h3 {
+          margin: 0 0 0.5rem;
+          font-size: 18px;
+          font-weight: 600;
+          color: #ffffff;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+          color: #cccccc;
+        }
+      }
+      
+      .enter-btn {
+        --background: #6A0DAD;
+        --color: #ffffff;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        height: auto;
+        align-self: center;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .discussion-card {
+      flex-direction: column;
+      align-items: center;
+      
+      img {
+        margin-bottom: 1rem;
+      }
+      
+      .enter-btn {
+        margin-top: 1rem;
+        align-self: center;
+      }
+      
+      .discussion-content {
+        text-align: center;
+      }
+    }
+  }
+  

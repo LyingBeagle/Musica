@@ -1,0 +1,19 @@
+<section class="popular-discussions-section">
+  <h2 class="section-title">Discusiones más populares</h2>
+  <div class="discussions-container">
+    <div class="discussion-card" *ngFor="let d of discussions">
+      <img [src]="d.image" [alt]="d.title" />
+      <div class="discussion-content">
+        <h3>{{ d.title }}</h3>
+        <p>{{ d.excerpt }}</p>
+      </div>
+      <ion-button 
+        class="enter-btn" 
+        fill="solid" 
+        size="small"
+      >
+        Entrar
+      </ion-button>
+    </div>
+  </div>
+</section>

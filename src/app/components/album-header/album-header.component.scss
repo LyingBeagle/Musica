@@ -1,0 +1,62 @@
+.album-header {
+  display: flex;
+  //flex-direction: column;
+  border-radius: 12px;
+  padding: 2rem;
+  gap: 2rem;
+  color: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.album-cover img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.album-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.8rem;
+}
+
+.album-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.artist-name {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: -0.5rem 0 1rem 0;
+}
+
+ion-button.action-button {
+  --background: #8914e3;
+  --background-hover: #a640f0;
+  --color: #fff;
+  --border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.music-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.platform-button {
+  --background: #8914e3;
+  --background-hover: #a640f0;
+  --color: #fff;
+  --border-radius: 20px;
+  font-size: 0.8rem;
+}

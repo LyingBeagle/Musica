@@ -1,0 +1,35 @@
+.album-info-box {
+  background-color: #333333;
+  border-radius: 16px;
+  padding: 20px 24px;
+  width: 260px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Segoe UI', sans-serif;
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .info-label {
+      font-weight: bold;
+    }
+
+    .info-value {
+      color: #e0e0e0;
+      text-align: right;
+    }
+
+    .genres a {
+      color: #a452ff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<section class="featured-artists-section">
+  <h2 class="section-title">Artistas destacados</h2>
+  <div class="artists-container">
+    <div class="artist-card" *ngFor="let artist of artists">
+      <img [src]="artist.image" [alt]="artist.name" />
+      <p>{{ artist.name }}</p>
+    </div>
+  </div>
+</section>

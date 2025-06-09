@@ -1,0 +1,116 @@
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    min-height: calc(100vh - 128px); /* resta header + footer */
+}
+
+.crear-cuenta-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.crear-cuenta-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--ion-text-color);
+}
+
+.crear-cuenta-header img {
+    height: 32px;
+    width: auto;
+}
+
+ .register-card {
+    background: var(--ion-color-tertiary); /* #333333 */
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  
+    .register-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  
+      h1 {
+        font-size: 1.5rem;
+        color: var(--ion-text-color);
+        margin: 0;
+      }
+      img {
+        height: 32px;
+        width: auto;
+      }
+    }
+  
+    form {
+      ion-item {
+        --background: #ffffff;
+        --color: #000000;
+        border-radius: 6px;
+        margin-bottom: 0.75rem;
+  
+        ion-label {
+          color: #666666;
+        }
+      }
+  
+      .selects-row {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+  
+        .select-item {
+          flex: 1;
+          --background: #ffffff;
+          --color: #000000;
+          border-radius: 6px;
+  
+          ion-label {
+            color: #666666;
+          }
+        }
+      }
+  
+      .terms-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.75rem;
+        margin: 0.75rem 0;
+  
+        label {
+          display: flex;
+          align-items: center;
+          gap: 0.25rem;
+          color: #888888;
+        }
+  
+        a {
+          color: #888888;
+          cursor: pointer;
+  
+          &:hover {
+            color: var(--ion-color-secondary);
+          }
+        }
+      }
+  
+      .register-btn {
+        --background: var(--ion-color-secondary);
+        --color: #ffffff;
+        border-radius: 24px;
+        height: 44px;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  

@@ -1,0 +1,25 @@
+<div class="artist-header-container">
+  <div class="artist-photo">
+    <img [src]="artist.image" [alt]="artist.name" />
+  </div>
+  <div class="artist-info">
+    <h1>{{ artist.name }}</h1>
+    <div class="info-columns">
+      <div class="left">
+        <p><span class="label">Años Activo</span><br /><strong>{{ artist.activeYears }}</strong></p>
+        <p><span class="label">Géneros</span><br />
+          <a *ngFor="let genre of artist.genres" href="#" class="genre">{{ genre }}</a>
+        </p>
+      </div>
+      <div class="right">
+        <p><span class="label">También conocido</span><br /><strong>{{ artist.aka.join(', ') }}</strong></p>
+        <p><span class="label">Discografía</span><br /><strong>{{ artist.discographyCount }}</strong></p>
+        <p><span class="label">Artistas relacionados</span><br /><strong>{{ artist.relatedArtists.join(', ') }}</strong></p>
+      </div>
+    </div>
+    <div class="follow-section">
+      <span class="followers">{{ artist.followers | number }} Seguidores</span>
+      <button class="follow-btn">Seguir</button>
+    </div>
+  </div>
+</div>

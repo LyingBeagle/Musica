@@ -1,0 +1,62 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 0;
+
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #ccc;
+    object-fit: cover;
+  }
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+
+      .btn {
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+        border: none;
+      }
+
+      .edit {
+        background-color: #6A0DAD;
+        color: white;
+      }
+
+      .follow {
+        background-color: #A349E5;
+        color: white;
+      }
+
+      .like {
+        background-color: #C185FF;
+        color: white;
+      }
+    }
+
+    .stats {
+      display: flex;
+      gap: 16px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="header-container">
+  <img [src]="user.avatar" alt="Avatar" class="avatar" />
+
+  <div class="info-section">
+    <h1>{{ user.name }}</h1>
+    <div class="buttons">
+      <button class="btn edit">Modificar Perfil</button>
+      <button class="btn follow">Seguir</button>
+      <button class="btn like">Dar Me Gusta</button>
+    </div>
+    <div class="stats">
+      <p>{{ user.followers | number }} Seguidores</p>
+      <p>{{ user.likes | number }} Me gusta</p>
+    </div>
+  </div>
+</div>

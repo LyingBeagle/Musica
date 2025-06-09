@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div class="page-container">
+    <!-- Álbumes -->
+    <h2 *ngIf="albums.length > 0">Álbumes</h2>
+    <div class="albums-section" *ngIf="albums.length > 0">
+      <app-album-card *ngFor="let album of albums" [album]="album"></app-album-card>
+    </div>
+
+    <!-- Sencillos -->
+    <h2 *ngIf="singles.length > 0">Sencillos</h2>
+    <div class="singles-section" *ngIf="singles.length > 0">
+      <app-single-card *ngFor="let single of singles" [cover]="single.cover"></app-single-card>
+    </div>
+
+    <!-- EPs -->
+    <h2 *ngIf="eps.length > 0">EPs</h2>
+    <div class="eps-section" *ngIf="eps.length > 0">
+      <app-single-card *ngFor="let ep of eps" [cover]="ep.cover"></app-single-card>
+    </div>
+  </div>
+</ion-content>
+
+<app-footer></app-footer>

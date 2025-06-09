@@ -1,0 +1,12 @@
+<div class = "album-card">
+  <img [src] = "album.cover" alt = "{{ album.title }}" />
+  <div class = "info">
+    <h3>{{ album.title }}</h3>
+    <p class = "meta">{{ album.year }} - {{ album.tracks }} - canciones {{ album.duration }}</p>
+    <div class = "stars">
+     <ng-container *ngFor="let star of starsArray; let i = index">
+        <ion-icon name = "star" *ngIf = "i < album.rating"></ion-icon>
+      </ng-container>
+    </div>
+  </div>
+</div>
