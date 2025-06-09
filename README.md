@@ -135,6 +135,10 @@ Una vez dentro de la aplicacion:
 
 ## PARA BACKEND:
 
+-RECUERDA TENER EL MYSQL EN EJECUCION
+
+-mientras tengas el mysql en ejecucion , realizar el siguiente comando: "npm run init-db", eso te creara la base de datos que nosotros incorporamos 
+
 - para iniciar el servidor : "npm start"
 
 ## PARA FRONT-END:
