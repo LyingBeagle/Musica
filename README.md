@@ -135,6 +135,8 @@ Una vez dentro de la aplicacion:
 
 ## PARA BACKEND:
 
+-Recuerda entrar en la carpeta "server", este es el comando : "cd server"
+
 -RECUERDA TENER EL MYSQL EN EJECUCION
 
 -mientras tengas el mysql en ejecucion , realizar el siguiente comando: "npm run init-db", eso te creara la base de datos que nosotros incorporamos 
